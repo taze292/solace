@@ -1,0 +1,12 @@
+{
+  "luau-lsp.types.definitionFiles": {
+    "@custom": "./-/Types/Environment.d.luau",
+    "@luarmor": "./-/Types/Luarmor.d.luau",
+    "@luraph": "./-/Types/Luraph.d.luau"
+  },
+  "luau-lsp.types.documentationFiles": [
+    "./-/Docs/Environment.d.json",
+    "./-/Docs/Luarmor.d.json",
+    "./-/Docs/Luraph.d.json"
+  ]
+}
