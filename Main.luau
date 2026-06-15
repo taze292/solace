@@ -1,5 +1,6 @@
 -- Initialization
-local Data = {...} :: { Services: {}, Interface: () -> nil }
+local Data = {...}
+Data = Data[1] :: { Services: {}, Interface: () -> nil }
 local Services = Data["Services"]
 local Interface = Data["Interface"]
 
