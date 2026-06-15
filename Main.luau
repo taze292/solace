@@ -127,3 +127,4 @@ local function HandleAimbot()
 end
 
 RunService.Heartbeat:Connect(HandleAimbot)
+Interface()
