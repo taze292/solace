@@ -1,9 +1,9 @@
-local RunService = game:GetService("RunService")
 -- Initialization
 local Data = {...} :: { Services: {}, Interface: () -> nil }
 local Services = Data["Services"]
 local Interface = Data["Interface"]
 
+print(Data, Services, Interface, getgenv().Solace)
 if not Data or not Services or not Interface or not getgenv().Solace then
     return warn("Please run the init script.")
 end
@@ -126,5 +126,5 @@ local function HandleAimbot()
     Camera.CFrame = NewCFrame
 end
 
-RunService.Heartbeat:Connect(HandleAimbot)
+Services.RunService.Heartbeat:Connect(HandleAimbot)
 Interface()
