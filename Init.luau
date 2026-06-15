@@ -8,4 +8,8 @@ getgenv().Solace = {
 local Services = loadstring(game:HttpGet("https://raw.githubusercontent.com/taze292/solace/refs/heads/main/Services.luau"))
 local Interface = loadstring(game:HttpGet("https://raw.githubusercontent.com/taze292/solace/refs/heads/main/UI.luau"))
 local Main = loadstring(game:HttpGet("https://raw.githubusercontent.com/taze292/solace/refs/heads/main/Main.luau"))
-Main(Services(), Interface)
+
+Main({
+    Services = Services(),
+    Interface = Interface
+})
